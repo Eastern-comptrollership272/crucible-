@@ -3,6 +3,17 @@
 
 > Code goes in. Pressure is applied. What comes out is proven, optimized, secured, and shippable.
 
+> ⚠️ **Token usage:** CRUCIBLE is a multi-agent pipeline — it consumes significantly more
+> tokens than a single-pass coding prompt. Before starting, it asks your plan and recommends
+> the right mode for your budget. Estimated usage by mode:
+> - `lean` — ~15,000 tokens (works on Free and Pro)
+> - `standard` — ~35,000 tokens (Pro and above)
+> - `+secure` — ~55,000 tokens (Max 5x recommended)
+> - `full` — ~100,000+ tokens (Max 5x or 20x recommended)
+>
+> If your session hits a limit mid-run, say `/crucible` in a new session — it resumes
+> automatically from where it stopped.
+
 CRUCIBLE is a Claude Code skill that routes every coding task through a structured 8-agent pipeline before delivery. Built on Loop Engineering principles — each agent has a distinct role, a separate evaluator checks the worker's output, and every feedback loop has intelligent fail-safes that prevent infinite cycling.
 
 ---
