@@ -6,7 +6,7 @@
 > ⚠️ **Token usage:** CRUCIBLE is a multi-agent pipeline — it consumes significantly more
 > tokens than a single-pass coding prompt. Before starting, it asks your plan and recommends
 > the right mode for your budget. Estimated usage by mode:
-> - `lean` — ~15,000 tokens (works on Free and Pro)
+> - `lean` — ~15,000 tokens (Pro)
 > - `standard` — ~35,000 tokens (Pro and above)
 > - `+secure` — ~55,000 tokens (Max 5x recommended)
 > - `full` — ~100,000+ tokens (Max 5x or 20x recommended)
